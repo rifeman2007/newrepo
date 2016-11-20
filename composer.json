@@ -2,10 +2,10 @@
     "require": {
         "php": ">=5.5.0",
         "slim/slim": "^3.1",
-        "illuminate/database": "*",
-        "willdurand/negotiation": "^2.2"
+        "illuminate/database": "*"
     },
     "autoload": {
+        "files": [ "app/config.php" ],
         "classmap": [ "app/models", "app/managers", "app/controllers", "app/repositories" ]
     }
 }

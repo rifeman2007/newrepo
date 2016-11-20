@@ -7,7 +7,7 @@ return [
         'db' => [
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'database'  => 'slim',
+            'database'  => 'testslim',
             'username'  => 'root',
             'password'  => '',
             'charset'   => 'utf8',

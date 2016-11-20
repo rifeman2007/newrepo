@@ -9,6 +9,10 @@ session_start();
 $settings   = require __DIR__ . '/../app/settings.php';
 $app        = new \Slim\App($settings);
 
+$container  = $app->getContainer();
+
+// Set up dependencies
+require_once __DIR__ . '/../app/config.php';
 
 // Set up dependencies
 require __DIR__ . '/../app/dependencies.php';

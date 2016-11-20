@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Class OrderSeed
+ * Class UserSeed
  */
-class OrderSeed
+class UserSeed
 {
     function run()
     {
-        $user               = new Order();
+        $user               = new User();
         $user->firstname    = "Aldwin";
         $user->lastname     = "Sabornido";
         $user->email        = "angle14201482@gmail.com";

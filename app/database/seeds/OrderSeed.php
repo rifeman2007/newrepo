@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Class UserSeed
+ * Class OrderSeed
  */
-class UserSeed
+class OrderSeed
 {
     function run()
     {
-        $user               = new User();
-        $user->user_id      = 1;
-        $user->total        = 200;
-        $user->status       = "09202222222";
-        $user->save();
+        $order               = new Order();
+        $order->user_id      = 1;
+        $order->total        = 200;
+        $order->status       = Order::STATUS_ORDERED;
+        $order->save();
     }
 }
