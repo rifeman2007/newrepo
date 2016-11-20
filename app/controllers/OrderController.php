@@ -36,7 +36,7 @@ class OrderController
         return $response->withJson([
             'success'   => true,
             'order'     => $order
-        ]);
+        ], 200);
     }
 
     /**
@@ -59,13 +59,13 @@ class OrderController
             return $response->withJson([
                 'success'   => false,
                 'message'   => 'Order already been cancelled.'
-            ], 404);
+            ], 302);
         }
 
         $this->container->get('order_manager')->markAsCancelled($order);
 
         return $response->withJson([
             'order' => $order
-        ]);
+        ], 200);
     }
 }
